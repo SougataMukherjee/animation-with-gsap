@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --sm-white: #fff;
+  --sm-orange: #ffa500;
+  --sm-red: #ff0000;
+  --sm-chocolate: #8c301f;
+  --sm-brown: #d33418;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--sm-orange);
+}
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  padding: 0 10vw;
+  z-index: 99;
+}
+nav a,
+i {
+  font-size: 1vw;
+  text-decoration: none;
+  color: var(--sm-white);
+}
+nav i {
+  font-size: 1.5vw;
+}
+.center-nav {
+  display: flex;
+  gap: 3vw;
+}
+.one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, var(--sm-orange), var(--sm-red));
+}
+.one h1 {
+  text-transform: uppercase;
+  font-size: 20vw;
+  color: var(--sm-white);
+}
+#fanta {
+  width: 40%;
+  z-index: 2;
+  position: absolute;
+  transition: ease-in-out;
+}
+#orange-slice {
+  width: 15%;
+  top: 10%;
+  left: 32%;
+  position: absolute;
+  z-index: 1;
+  transition: ease-in-out;
+}
+#orange {
+  width: 20%;
+  position: absolute;
+  z-index: 3;
+  top: 55%;
+  right: 30%;
+  transition: ease-in-out;
+}
+#leaf {
+  width: 10%;
+  position: absolute;
+  width: 18%;
+  left: 5%;
+  transform: rotate(60deg);
+  transition: ease-in-out;
+}
+#leaf-2 {
+  top: 70%;
+  left: 80%;
+  transform: rotate(-90deg);
+  width: 10%;
+  position: absolute;
+  transition: ease-in-out;
+}
+#leaf-3 {
+  width: 20%;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+}
+.two {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--sm-chocolate);
+}
+.left-two,
+.right-two {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+  width: 50%;
+  height: 100%;
+}
+.left-two svg {
+  margin-top: 50vh;
+  width: 90%;
+  transform: rotateX(50deg);
+}
+.right-two h1 {
+  color: var(--sm-white);
+  font-size: 5vw;
+}
+.right-two p {
+  color: var(--sm-white);
+  font-size: 1vw;
+  width: 80%;
+}
+.three {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--sm-chocolate);
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 25vw;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 10vh;
+}
+.card:nth-child(odd) {
+  background-color: var(--sm-brown);
+  color: #fff;
+}
+.card h1 {
+  font-size: 3vw;
+  margin-top: 40vh;
+}
+.card button {
+  padding: 1vw 2vw;
+  font-size: 1vw;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--sm-orange);
+  color: var(--sm-white);
+}
+#cocacola {
+  width: 13%;
+  top: 15%;
+  position: absolute;
+}
+#pepsi {
+  position: absolute;
+  width: 20%;
+  top: 12%;
+}
+.lemon {
+  top: 0%;
+  position: absolute;
+  width: 25vw;
+}

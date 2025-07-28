@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="left">
+            <h3>TWO</h3>
+            <h3>GOOD</h3>
+            <h3>CO.</h3>
+        </div>
+        <div class="right">
+            <div id="links">
+                <a href="#">Shop</a>
+                <a href="#">Catering</a>
+                <a href="#">Donate</a>
+                <a href="#">Shop</a>
+            </div>
+            <div id="icons"><i class="ri-menu-line"></i><i class="ri-shopping-cart-line"></i></div>
+        </div>
+    </div>
+    <div id="cursor"></div>
+    <div id="main">
+        <div class="page1">
+            <h1>Change</h1>
+            <h1>The course</h1>
+            <div id="video-container" class="bg-gray-500">
+                <div id="play">PLAY</div>
+                <video src="./video/img/video.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="elem1" class="elem">
+                <img data-scroll data-scroll-speed="1" src="./img/elem1.webp" alt="" />
+                <div class="dets" data-scroll data-scroll-speed="-1"></div>
+            </div>
+            <div id="elem2" class="elem">
+                <img data-scroll data-scroll-speed="1" src="./img/elem2.webp" alt="" />
+                <div class="dets" data-scroll data-scroll-speed="-1"></div>
+
+            </div>
+            <div id="elem3" class="elem">
+                <img data-scroll data-scroll-speed="1" src="./img/elem3.webp" alt="" />
+                <div class="dets" data-scroll data-scroll-speed="-1"></div>
+
+            </div>
+        </div>
+        <div id="page3">
+            <div class="child" id="child1">
+                <img src="./img/child1.webp" alt="" />
+            </div>
+            <div class="child" id="child2">
+                <img src="./img/child2.webp" alt="" />
+
+            </div>
+            <div class="child" id="child3">
+                <img src="./img/child3.webp" alt="" />
+
+            </div>
+            <div class="child" id="child4">
+                <img src="./img/child4.webp" alt="" />
+
+            </div>
+        </div>
+    </div>
+    <!-- order: locomotive GSAP scrolltrigger your js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

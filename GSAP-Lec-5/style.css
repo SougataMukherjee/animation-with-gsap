@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: cursive;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#page1 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+#page1 h3 {
+  font-size: 4vw;
+  color: #fff;
+  text-transform: uppercase;
+}
+#page2 {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  overflow: hidden;
+  position: relative;
+}
+#page2 h3 {
+  font-size: 40vw;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+  padding-right: 100vw;
+  will-change: transform;
+}
+#page3 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}

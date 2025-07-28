@@ -1,0 +1,235 @@
+:root {
+  --sm-white: #fff;
+  --sm-black: #000;
+  --sm-lightGray: #f7f7f7;
+  --sm-skin: #ffdbac;
+  --sm-pink: #e59cba;
+  --sm-gray: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  color: var(--sm-white);
+  background-color: var(--sm-black);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: var(--sm-lightGray);
+}
+#nav {
+  height: 100px;
+  width: 100%;
+  background-color: var(--sm-skin);
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px;
+}
+#nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+#nav .right #links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--sm-gray);
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 20px;
+}
+#nav .right #icons {
+  border-radius: 50px;
+  background-color: var(--sm-white);
+  padding: 10px;
+}
+#nav .right #icons i {
+  font-size: 18px;
+  margin: 0 20px;
+}
+#cursor {
+  height: 150px;
+  width: 150px;
+  background-color: var(--sm-skin);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%) scale(0);
+}
+.page1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 18vh;
+  padding: 0 1vw;
+}
+.page1 h1 {
+  font-size: 14vw;
+  font-weight: 800;
+  font-family: futura;
+  text-transform: uppercase;
+  line-height: 15vw;
+  letter-spacing: -5px;
+}
+#video-container {
+  height: 100vh;
+  width: 100%;
+  margin-top: 1vw;
+  position: relative;
+}
+#video-container video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#video-container #play {
+  padding: 3vw 2.2vw;
+  background-color: var(--sm-black);
+  color: var(--sm-white);
+  font-size: 1.5vw;
+  position: fixed;
+  text-transform: uppercase;
+  font-family: futura;
+  border-radius: 50%;
+  opacity: 0;
+  scale: 0;
+}
+#page2 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 1vw;
+}
+#page2 .elem {
+  height: 100%;
+  width: 30%;
+  background-color: var(--sm-black);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page2 .elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  scale: 1.1;
+}
+#page2 .elem .dets {
+  height: 60px;
+  border-radius: 50px;
+  width: 70%;
+  position: absolute;
+  z-index: 9;
+
+  background-color: var(--sm-pink);
+}
+
+#page3 {
+  min-height: 120vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.child {
+  height: 54vh;
+  width: 38vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child img {
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .page1 {
+    min-height: 70vh;
+    width: 100%;
+    padding: 0 3vw;
+    padding-top: 25vh;
+  }
+  .page1 h1 {
+    font-size: 15.3vw;
+    letter-spacing: -3px;
+  }
+  #video-container {
+    height: 25vh;
+    margin-top: 3vw;
+  }
+  #video-container #play {
+    padding: 9.5vw 7.2vw;
+    font-size: 4.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    scale: 1;
+    transform: translate(-50%, -50%);
+  }
+  #page2 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5vw 3vw;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #page2 .elem {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 3vw;
+  }
+  #page2 .elem .dets {
+    height: 40px;
+    border-radius: 50px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    background-color: var(--sm-pink);
+  }
+
+  #page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .child {
+    height: 54vh;
+    width: 88vw;
+    position: relative;
+    padding: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .child img {
+    height: 100%;
+  }
+}
